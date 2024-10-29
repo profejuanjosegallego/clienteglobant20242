@@ -7,6 +7,8 @@ let cajaPesoZona=document.getElementById("pesoZona")
 let formualrioZona=document.getElementById("formualriozona")
 
 botonZona.addEventListener("click",function(evento){
+
+    evento.preventDefault()
     
     let datosZona={
         nombreZona:cajaNombreZona.value,

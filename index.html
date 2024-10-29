@@ -134,37 +134,37 @@
                         <div class="row my-3">
                             <div class="col-12">
                                 <label class="form-label">Nombre: </label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="nombremercancia">
                             </div>
                         </div>
                         <div class="row my-3">
                             <div class="col-12">
                                 <label class="form-label">Descripción: </label>
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="descripcionmercancia"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <label class="form-label">Volumen que ocupa: </label>
-                                <input type="number" class="form-control">
+                                <input type="number" class="form-control" id="volumenmercancia">
                             </div>
                             <div class="col-6">
                                 <label class="form-label">Peso que registra: </label>
-                                <input type="number" class="form-control">
+                                <input type="number" class="form-control" id="pesomercancia">
                             </div>
                         </div>
                         <div class="row my-3">
                             <div class="col-6">
                                 <label class="form-label">Fecha Ingreso: </label>
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control" id="fechaingresomercancia">
                             </div>
                             <div class="col-6">
                                 <label class="form-label">Fecha Salida: </label>
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control" id="fechasalidamercancia">
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-warning w-100">Registrar</button>
+                        <button type="submit" class="btn btn-warning w-100" id="botonregistromercancia">Registrar</button>
                         
                     </form>
                     
@@ -180,5 +180,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./src/controllers/controladorRegistroZona.js" type="module"></script>
+    <script src="./src/controllers/controladorRegistroMercancia.js" type="module"></script>
 </body>
 </html>
