@@ -37,18 +37,7 @@ botonMercancia.addEventListener("click",function(evento){
     }
 
     
-    fetch(URL, peticion)
-    .then(function(respuesta){
-        return respuesta.json()
-    })
-    .then(function(respuesta){
-        console.log(respuesta)
-    })
-    .catch(function(error){
-        console.log("upps",error)
-    })
-
-
+    
     Swal.fire({
         title: "Good job!",
         text: "You clicked the button!",
