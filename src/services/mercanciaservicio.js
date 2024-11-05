@@ -10,24 +10,11 @@ export async function registrarMercancia(datosMercancia){
         body: JSON.stringify(datosMercancia)
     }
 
-    
 
-   
-    fetch(URL, peticion)
-    .then(function(respuesta){
-        return respuesta.json()
-    })
-    .then(function(respuesta){
-        console.log(respuesta)
-    })
-    .catch(function(error){
-        console.log("upps",error)
-    })
-       
-    
+    let respuestaServidor=await fetch(URL,peticion)
 
-    //let respuestaFinal= await respuestaServidor.json()
+    let respuestaFinal= await respuestaServidor.json()
 
-    //console.log(respuestaFinal)
+    console.log(respuestaFinal)
 
 }

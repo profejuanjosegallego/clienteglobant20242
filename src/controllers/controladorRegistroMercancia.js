@@ -23,20 +23,10 @@ botonMercancia.addEventListener("click",function(evento){
             idZona:1
         }
     }
-    console.log(objetoMercancia)
+    //console.log(objetoMercancia)
     //llamo al servicio para llevarle los datos al back
-    
-    const URL="http://localhost:8080/logisticAPP/v1/mercancias"
+    registrarMercancia(objetoMercancia)
 
-    let peticion={
-        method:"POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(objetoMercancia)
-    }
-
-    
     
     Swal.fire({
         title: "Good job!",
